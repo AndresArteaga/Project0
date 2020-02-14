@@ -1,0 +1,157 @@
+$formTxtColor: #A9AEC0;
+$inputTxtColor: rgba(255, 255, 255, 0.6);
+$footerTxtColor: #d2b6a1;
+
+%fontType{
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+}
+h1{
+  @extend %fontType;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+h2{
+  @extend %fontType;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 15.4px;
+}
+p{
+  @extend %fontType;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+body{
+  margin: 0;
+  padding: 0;;
+}
+
+body::before{
+  content: '';
+  position: fixed;
+  width: 100vw;
+  height: 80vh;
+  background-image: url(images/sign_in-background1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+main, .back-ground{
+  position: absolute;
+  width: 100vw;
+  height: 80vh;
+}
+.back-ground{
+  margin: 0;
+  text-align: center;
+  .site-logo{
+    margin: 0;
+    height: 5vh;
+    color: white;
+    text-align: center;
+  }
+  .row{
+    margin: 0;
+    height: 75vh;
+  }
+  .contact-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-trnasform: (-50%, -50%);
+    -moz-transform: (-50%, -50%);
+    -ms-transform: (-50%, -50%);
+    -o-transform: (-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    h1{
+      margin: 10px;
+      padding: 2px;
+      color: $formTxtColor;
+    }
+    p{
+      margin: 5px;
+      padding: 2px;
+      text-align: left;
+      color: $formTxtColor;
+    }
+    input[type=checkbox]{
+      margin-left: 75px;
+      cursor: pointer;
+    }
+  }
+}
+
+.input_field{
+  @extend %fontType;
+  border: none;
+  border-left: 5px solid $inputTxtColor;
+  border-bottom: 1px solid $inputTxtColor;
+  margin: 5px;
+  padding: 1.6px;
+  height: 30px;
+  width: 200px;
+  outline: none;
+  background: transparent;
+  color: $inputTxtColor;
+  font-size: 15px;
+}
+.btn{
+  margin: 5px 5px 5px 5px;
+  padding: 12px 12px 12px 12px;
+  .btnTxt{
+    margin: 0;
+  }
+}
+p > a{
+  color: $inputTxtColor;
+}
+p > a:hover{
+  color: $inputTxtColor;
+  font-weight: bold;
+  text-decoration: none;
+}
+@media(max-width: 800px){
+
+}
+#Main_foot{
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  text-align: center;
+  background: linear-gradient(160deg, #2b241e 10%, #121317 50%, #232429 90%);
+  height: 20vh;
+  width: 100vw;
+  color: black;
+  h2{
+    color: $footerTxtColor;
+    margin: 15px;
+    padding: 5px;
+  }
+  p{
+    color: $footerTxtColor;
+    margin: 7px;
+    padding: 3px;
+  }
+}
+.fa {
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color:$footerTxtColor;
+}
+.fa:hover{
+  opacity: 0.7;
+  color: #78655f;
+  text-decoration:none;
+}
