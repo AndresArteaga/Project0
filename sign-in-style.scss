@@ -27,6 +27,9 @@ p{
 }
 
 body{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
   margin: 0;
   padding: 0;;
 }
@@ -121,9 +124,7 @@ p > a:hover{
   font-weight: bold;
   text-decoration: none;
 }
-@media(max-width: 800px){
 
-}
 #Main_foot{
   position: absolute;
   bottom: 0;
@@ -146,6 +147,7 @@ p > a:hover{
 }
 .fa {
   padding: 10px;
+  font-size: 24px;
   text-align: center;
   text-decoration: none;
   color:$footerTxtColor;
@@ -155,3 +157,58 @@ p > a:hover{
   color: #78655f;
   text-decoration:none;
 }
+
+@media(max-width: 767px){
+  h2{
+    font-size: 12px;
+  }
+  p{
+    font-size: 8px;
+  }
+  body::before{
+    height: 590px;
+  }
+  body{
+    height: 590px;
+  }
+  main{
+    height: 614px;
+    site-logo{
+      position: absolute;
+      height: 42.5px;
+    }
+  }
+  .back-ground .row{
+    position: relative;
+    height: 394px;
+  }
+  .back-ground .contact-form{
+    height: 384;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+  }
+    #Main_foot {
+    height: 154px;
+    bottom: -154px;
+    align-items: left;
+    h2{
+      margin: 5px;
+      padding: 0;
+    }
+  }
+  .fa{
+    padding: 0 10px 0 10px;
+    font-size: 8px;
+  }
+}
+/*
+@media(min-width: 768px) and (max-width: 991px){
+  body{
+    height: 110vh;
+    width: 100vw;
+  }
+}
+*/
