@@ -1,0 +1,172 @@
+html, body{
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  margin: 0;
+  padding: 0;
+  min-width: 900px;
+  background-color: whitesmoke;
+}
+
+#Main_bar{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #0C1B29;
+}
+
+#button_bar{
+  margin: 0 auto;
+  height: 40px;
+}
+
+.home_logo, .search_bar, .page_link{
+  margin-top: 5px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+form{
+  display: flex;
+  align-items:center;
+  padding: 0;
+}
+
+.search_form{
+  margin: 0 auto;
+  height: 30px;
+  width: 250px;
+  border-radius: 5px;
+  background: rgba(98, 104, 136, 0.3);
+}
+
+.button{
+  margin: 0 auto;
+  margin-left: 5px;
+  border-radius: 5px;
+  background: #434969;
+  border: none;
+  color: white;
+  height: 20px;
+}
+
+button:hover{
+  background: #1B1E2B;
+}
+
+.bar_item{
+  margin: 0;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  padding: 3px;
+  margin: 1px;
+  font-weight: bold;
+}
+
+a:hover{
+  color: #2a5a78;
+  text-decoration: overline;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+main{
+  top: 40px;
+}
+
+#Main_content > header{
+  background-image: url(images/GameCenterLobi-background.png);
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: 40 center ;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+.content_body{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.content{
+  width: 80vw;
+}
+
+.page_menu, .content{
+  margin:5px;
+  padding:10px;
+}
+
+.content{
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gamesOffer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game{
+  height: 270px;
+  width: 200px;
+  margin:15px;
+  background-color: #A1A3A5;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 5px;
+  border-color:  #637C80;
+}
+
+.game > img{
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.buy_now{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  margin-bottom: 0;
+}
+
+.game > h4{
+  text-align: center;
+}
+
+.game > p{
+  text-align: center;
+}
+
+#Main_foot{
+  bottom: 0;
+  background: linear-gradient(160deg, #2b241e 10%, #121317 50%, #232429 90%);
+  height: 150px;
+  width: 100%;
+  color: #d2b6a1
+}
+
+.fa {
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color:white;
+}
+
+.fa:hover{
+  opacity: 0.7;
+  color: whitesmoke;
+  text-decoration:none;
+  background-color: #3d454a;
+}
