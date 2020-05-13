@@ -1,0 +1,29 @@
+#main_article{
+  display: block;
+  padding-top: 40px;
+  background-color: #0C1B29;
+  padding-bottom: 20px;
+}
+
+.article{
+  margin: 10px auto 0 auto;
+  padding: 20px;
+  background-color: whitesmoke;
+  width: 70%;
+  border-radius: 10px;
+}
+
+.article h1, .article h2{
+  text-align: center;
+  color: #0C1B29;
+}
+
+.article img{
+  display: block;
+  margin: 10px auto 10px auto;
+  border-radius: 10px;
+}
+
+p > a{
+  color: #1d4163;
+}
